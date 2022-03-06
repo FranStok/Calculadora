@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #EA738DFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo{
+    width: 450px;
+    height: 700px;
+    background-color: #89ABE3FF;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    border-radius: 7px;
+    border: black solid 1px;
+    gap: 14px;
+}
+.elemento{
+    padding: 25px;
+    font-size: 28px;
+}
+.display{
+    padding: 30px;
+    grid-column: 1 / span 4;
+    margin-bottom: 6px;
+    max-width: 100%;
+    text-align: end;
+}
+.borrar{
+    grid-column: 1 /span 2;
+}
