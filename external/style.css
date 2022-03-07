@@ -17,13 +17,15 @@ body{
     padding: 20px;
     border-radius: 7px;
     border: black solid 1px;
-    gap: 14px;
+    gap: 7px;
 }
 .elemento{
     padding: 25px;
     font-size: 28px;
+    border-radius: 25%;
 }
 .display{
+    border-radius: 10%;
     padding: 30px;
     font-size: 28px;
     grid-column: 1 / span 4;
@@ -33,4 +35,5 @@ body{
 }
 .borrar{
     grid-column: 1 /span 2;
+    border-radius: 0;
 }

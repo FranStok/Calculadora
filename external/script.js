@@ -49,7 +49,27 @@ igual.addEventListener("click",(e)=>{
     if((/(-|X|:|[+])/).test(cuenta)){
         op=cuenta.charAt(cuenta.search(/[-X:+]/))
         partes=cuenta.split(/[-X:+]/);
+        if(partes[1]==" "){return;}
         opVigente=false;
         return display.textContent=operacion(op,parseInt(partes[0].replace(" ","")),parseInt(partes[1].replace(" ","")))
     }
+});
+const C=document.querySelector(".C");
+C.addEventListener("click",(e)=>{
+    display.textContent=0;
+    cuenta=null;
+    opVigente=false;
+    return;
+});
+const borrar=document.querySelector(".borrar");
+borrar.addEventListener("click",(e)=>{
+    let sinEspacios=display.textContent.replaceAll(" ","");
+    let eliminar=sinEspacios.charAt(sinEspacios.length-1);
+    if(eliminar.match(/[-X:+]/)){
+        opVigente=false;
+    };
+    let nuevo=sinEspacios.slice(0,-1);
+    if(nuevo=="")
+        nuevo="0"
+    return display.textContent=nuevo;
 })
