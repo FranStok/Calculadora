@@ -37,3 +37,9 @@ body{
     grid-column: 1 /span 2;
     border-radius: 0;
 }
+.borrar,
+.C,
+.igual,
+.operacion{
+    color:#EA738DFF;
+}
