@@ -9,7 +9,8 @@ function resta(a,b){
 function division(a,b){
     if(b!=0)
         return a/b;
-    return "Indefinido"
+    alert("division por 0 es indefinida")
+    return 0
 }
 function operacion(op,a,b){
     if(op=="+")
