@@ -25,6 +25,7 @@ body{
 }
 .display{
     padding: 30px;
+    font-size: 28px;
     grid-column: 1 / span 4;
     margin-bottom: 6px;
     max-width: 100%;
